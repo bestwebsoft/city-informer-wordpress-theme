@@ -1,0 +1,82 @@
+/*
+This file contains specific styles for IE lt 9
+*/
+
+#header_top {
+	height: 50px;
+	height:expression(document.body.clientHeight<51?"50px":"auto");
+}
+
+#header_top_wrapper {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#header_bottom_wrapper {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#custom-header {
+	height: 1px;
+	height:expression(document.body.clientHeight<1?"1px":"auto");
+}
+
+#header_top hgroup {
+    height: 0;
+    width: 100%;
+}
+
+#main-header h1.site-title {
+	float: left;
+}
+
+#main-header h1.site-title {
+    width: expression(document.body.clientHeight<301?"300px":"auto");
+}
+
+#nav ul li {
+	z-index: 20;
+}
+
+#nav ul li:hover ul {
+	z-index: 15;
+	border: 1px solid #d9d9d9;
+}
+
+.breadcrumbs {
+	display: block;
+	float: left;
+	margin-left: 0px;
+	padding-left: 131px;
+	margin-top: 0px;
+	position: relative;
+}
+
+.attachment-slider-image  {
+	height: 430px;
+	padding: 0;
+}
+
+aside .search-form {
+	width: 285px;
+	margin-left: 10px;
+}
+
+#footer-wrapper {
+	margin-top: 142px;
+}
+
+#custom-header img {
+	left: 0;
+    margin: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+}
+
+#custom-header .site-title,
+#custom-header .site-description {
+    position: relative;
+}

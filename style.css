@@ -1,0 +1,1890 @@
+/*  
+Theme Name: City Informer
+Theme URI: http://bestwebsoft.com/theme/city-informer/
+Author: the BestWebSoft team
+Author URI: https://github.com/bestwebsoft
+Description: WordPress theme for blogs and websites.
+Version: 1.2
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: left-sidebar, custom-menu, featured-images, sticky-post, threaded-comments
+Text Domain: city_informer
+*/
+
+/* Reset CSS*/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family:"Open Sans", Helvetica, sans-serif;
+    font-size: 13px;
+    color:#656565;
+    min-height: 100%;
+}
+
+/********************************************/
+/******************Fonts********************/
+/******************************************/
+
+/******************************************** Open Sans*/
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/Open_Sans/OpenSans-Bold.eot');
+    src: url('fonts/Open_Sans/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Open_Sans/OpenSans-Bold.svg#Open Sans') format('svg'),
+    url('fonts/Open_Sans/OpenSans-Bold.woff') format('woff'),
+    url('fonts/Open_Sans/OpenSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/Open_Sans/OpenSans-BoldItalic.eot');
+    src: url('fonts/Open_Sans/OpenSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Open_Sans/OpenSans-BoldItalic.svg#Open Sans') format('svg'),
+    url('fonts/Open_Sans/OpenSans-BoldItalic.woff') format('woff'),
+    url('fonts/Open_Sans/OpenSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/Open_Sans/OpenSans-ExtraBold.eot');
+    src: url('fonts/Open_Sans/OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Open_Sans/OpenSans-ExtraBold.svg#Open Sans Extrabold') format('svg'),
+    url('fonts/Open_Sans/OpenSans-ExtraBold.woff') format('woff'),
+    url('fonts/Open_Sans/OpenSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}    
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/Open_Sans/OpenSans-ExtraBoldItalic.eot');
+    src: url('fonts/Open_Sans/OpenSans-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Open_Sans/OpenSans-ExtraBoldItalic.svg#Open Sans Extrabold') format('svg'),
+    url('fonts/Open_Sans/OpenSans-ExtraBoldItalic.woff') format('woff'),
+    url('fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/Open_Sans/OpenSans-Italic.eot');
+    src: url('fonts/Open_Sans/OpenSans-Italic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Open_Sans/OpenSans-Italic.svg#Open Sans') format('svg'),
+    url('fonts/Open_Sans/OpenSans-Italic.woff') format('woff'),
+    url('fonts/Open_Sans/OpenSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+} 
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/Open_Sans/OpenSans-Light.eot');
+    src: url('fonts/Open_Sans/fonts/Open_Sans/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Open_Sans/OpenSans-Light.svg#Open Sans Light') format('svg'),
+    url('fonts/Open_Sans/OpenSans-Light.woff') format('woff'),
+    url('fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}       
+
+ @font-face {
+    font-family: "Open Sans";
+    src: url('fonts/Open_Sans/OpenSans-Regular.eot');
+    src: url('fonts/Open_Sans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Open_Sans/OpenSans-Regular.svg#Open Sans') format('svg'),
+    url('fonts/Open_Sans/OpenSans-Regular.woff') format('woff'),
+    url('fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/Open_Sans/OpenSans-Semibold.eot');
+    src: url('fonts/Open_Sans/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Open_Sans/OpenSans-Semibold.svg#Open Sans Semibold') format('svg'),
+    url('fonts/Open_Sans/OpenSans-Semibold.woff') format('woff'),
+    url('fonts/Open_Sans/OpenSans-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+} 
+    
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/Open_Sans/OpenSans-SemiboldItalic.eot');
+    src: url('fonts/Open_Sans/OpenSans-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Open_Sans/OpenSans-SemiboldItalic.svg#Open Sans Semibold') format('svg'),
+    url('fonts/Open_Sans/OpenSans-SemiboldItalic.woff') format('woff'),
+    url('fonts/Open_Sans/OpenSans-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}          
+
+
+/*************************************************** Share font ************/
+
+@font-face {
+    font-family: "Share";
+    src: url('fonts/Share/Share-Bold.eot');
+    src: url('fonts/Share/Share-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Share/Share-Bold.svg#Share') format('svg'),
+    url('fonts/Share/Share-Bold.woff') format('woff'),
+    url('fonts/Share/Share-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Share";
+    src: url('fonts/Share/Share-Regular.eot');
+    src: url('fonts/Share/Share-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Share/Share-Regular.svg#Share') format('svg'),
+    url('fonts/Share/Share-Regular.woff') format('woff'),
+    url('fonts/Share/Share-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Share";
+    src: url('fonts/Share/Share-Italic.eot');
+    src: url('fonts/Share/Share-Italic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Share/Share-Italic.svg#Share') format('svg'),
+    url('fonts/Share/Share-Italic.woff') format('woff'),
+    url('fonts/Share/Share-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+ @font-face {
+    font-family: "Share";
+    src: url('fonts/Share/Share-BoldItalic.eot');
+    src: url('fonts/Share/Share-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Share/Share-BoldItalic.svg#Share') format('svg'),
+    url('fonts/Share/Share-BoldItalic.woff') format('woff'),
+    url('fonts/Share/Share-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+/***************************************** end fonts ************************/
+
+/********************************************************/
+/********************** General Styles *****************/
+/******************************************************/   
+
+
+:focus{
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+	color:#aaaaaa;
+	font-size: 13px;
+}
+
+a:hover{
+	text-decoration: none;
+	outline: none;
+	color: #cd6a39;
+	font-size: 13px;
+}
+
+a img {
+	border:none;
+}
+
+img {
+    margin-bottom: 10px;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+code {
+    padding: 0 5px;
+    border: 1px solid #cecece;
+    background-color: #fff;
+    color: #999;
+    font-family: "Courier New", serif;
+    font-style: normal;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Share, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 24px;
+}
+h2 {
+	font-size: 21px;
+}
+h3 {
+	font-size: 18px;
+}
+h4 {
+	font-size: 15px;
+}
+h5 {
+	font-size: 13px;
+}
+h6 {
+	font-size: 11px;
+}
+
+p {
+	font-size: 13px;
+	color:#656565;
+    line-height: 21px;
+}
+
+hr {
+	border:0;
+	height: 7px;
+	background:transparent url("images/sidebar-line.jpg") repeat-x 0 0; 
+}
+
+/**************************Lists*/
+
+dl {
+	margin-left:30px;
+    margin-top: 19px;
+    margin-bottom: 8px;
+}
+dt {
+	font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+#content ol
+{
+	margin: 14px 0 5px 47px;
+}
+#content ul {
+    margin: 14px 0 7px 47px;
+}
+
+#content ul ol,
+#content ol ul,
+#content ul ul,
+#content ol ol {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#content li {
+    margin: 4px 0 4px 4px;
+}
+
+sub,
+sup {
+	color: #aaaaaa;
+}
+
+pre {
+	display: block;
+	width: 500px;
+	border:1px solid #dcdcdc;
+	color: #aaaaaa;
+	font-family: Courier, "Courier New", monospace;
+	background:#444444;
+	padding: 15px 19px 11px 19px;
+	margin-top: 7px;
+    font-size: 13px;
+    line-height: 21px;
+    overflow-x: auto;
+}
+
+blockquote {
+	display: block;
+	width: 330px;
+    margin-top: 19px;
+    font-size: 14px !important;
+	border-radius: 3px;
+	border:1px solid #dcdcdc;	
+	padding: 8px 20px 10px 29px;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+blockquote:after {
+	display: block;
+	position: absolute;
+	width: 330px;
+	margin-top: 10px;
+	text-align: right;
+	padding-left: 20px;
+	font-family: "Open Sans";
+	font-size: 13px;
+	content: "- Blockquote";
+	background: url(images/quote.png) no-repeat top right;
+	z-index: 1;
+	line-height: 3;
+	font-weight: bold;
+}
+
+table {
+    width: 100%;
+    margin: 0 0 21px;
+    text-align: left;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table caption,
+table thead {
+    text-align: center;
+    background: #eee;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    text-align: center;
+    background: #eee;
+}
+
+/***********************Forms*********************/
+
+input[type="text"], 
+input[type="reset"], 
+input[type="submit"], 
+textarea, 
+.slider-more,
+blockquote {
+    position: relative;
+}
+
+/*************************************************input TEXT*/
+#content input[type="text"],
+#content input[type="password"] {
+	display: block;
+	width: 200px;
+	height: 39px;
+	margin-top: 2px;
+	margin-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 5px;
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	-moz-border-radius: 3px; /* Firefox */
+  	-webkit-border-radius: 3px; /* Safari, Chrome */
+  	-o-border-radius: 3px; /* Opera */
+    -ms-border-radius: 3px; /* IE8 */
+    -khtml-border-radius: 3px;
+	border:1px solid #d8d8d8;
+}
+
+/*************************************************input TEXTAREA*/
+#content textarea {
+	overflow: auto; /*убираем скрол */
+	display: block;
+	width: 210px;
+	height: 100px;
+	margin-top: 2px;
+	margin-bottom: 16px;
+	padding: 7px 0px 0px 10px;
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	-moz-border-radius: 3px; /* Firefox */
+  	-webkit-border-radius: 3px; /* Safari, Chrome */
+  	-o-border-radius: 3px; /* Opera */
+    -khtml-border-radius: 3px;
+	border:1px solid #d8d8d8;
+	max-width: 520px;
+	outline: none;
+}
+
+/****************************************************input SELECT*/
+.selectBox-dropdown {
+    margin-top: 2px;
+    min-width: 220px;
+    width: 200px ;
+    max-width: 250px;
+    position: relative;
+    border: solid 1px #dcdcdc;
+    height: 39px;
+    text-decoration: none;
+    text-align: left;
+    vertical-align: middle;
+    outline: none;
+ 	background: #fbfbfb;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.entry-content form a:hover {
+	color: #48565f !important;
+}
+
+.selectBox-dropdown:focus,
+.selectBox-dropdown:focus .selectBox-arrow {
+    border-color: #b3b3b3;
+    background: #fff;
+}
+
+.selectBox-dropdown .selectBox-label {
+    line-height: 100%;
+    padding: 12px 9px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #656565;
+    font-size: 13px;
+}
+
+.selectBox-dropdown:focus .selectBox-arrow {
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: url('images/select-arrow.png') 50% center no-repeat;
+}
+
+.selectBox-dropdown .selectBox-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: url('images/select-arrow.png') 50% center no-repeat;
+}
+
+/********************************* Dropdown menu */
+.selectBox-dropdown-menu {
+	display: block;
+	margin: 20px;
+    position: absolute;
+    z-index: 99999;
+    min-height: 1em;
+    border: solid 1px #dddddd; 
+    background: #fdfdfd;
+    overflow: visible;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Inline control */
+.selectBox-inline {
+    min-width: 150px;
+    outline: none;
+    border: solid 1px #BBB;
+    background: #FFF;
+    display: inline-block;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    overflow: visible;
+}
+
+.selectBox-inline:focus {
+    border-color: #666;
+}
+
+/* Options */
+.selectBox-options,
+.selectBox-options li,
+.selectBox-options li a {
+    list-style: none;
+    display: block;
+    cursor: default;
+    padding: 0;
+    margin: 0px;
+    color: #656565;
+}
+
+.selectBox-options {
+    padding-top: 15px;
+    padding-bottom: 11px;
+}
+
+.selectBox-options li a {
+    line-height: 31px;
+	font-size: 13px;
+    padding: 0 29px;
+    white-space: pre-wrap;
+    overflow: hidden;
+}
+
+.selectBox-options LI.selectBox-hover a {
+    background-color: #444444;
+    color: #fff;
+}
+
+.selectBox-options LI.selectBox-disabled a {
+    color: #888;
+    background-color: transparent;
+}
+
+.selectBox-options LI.selectBox-selected a {
+    background-color: #444444;
+    color: #fff;
+}
+
+.selectBox-options .selectBox-optgroup {
+    color: #aaaaaa;
+    background: none;
+	font-size: 13px;
+	line-height: 1;
+	padding: 8px 0 7px 9px;
+    white-space: pre-wrap;
+}
+
+/* Disabled state */
+.selectBox.selectBox-disabled {
+    color: #888 !important;
+}
+
+.selectBox-dropdown.selectBox-disabled .selectBox-arrow {
+    opacity: .5;
+    border-color: #666;
+}
+
+.selectBox-inline.selectBox-disabled {
+    color: #888 !important;
+}
+
+.selectBox-inline.selectBox-disabled .selectBox-options a {
+    background-color: transparent !important;
+}
+
+/********************* Radio And Checkbox */
+
+.radio,
+.checkbox {
+	cursor: pointer;
+	margin: 2px 8px 20px 32px;
+}
+
+form .radio + label,
+form .city_informer-fake-radio-container + label,
+form .checkbox + label,
+form .city_informer-fake-checkbox-container + label {
+	display: block;
+    float: left;
+	cursor: pointer;
+	word-spacing: 0px;
+    line-height: 21px;
+    padding-top: 1px;
+    padding-left: 1px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	cursor: pointer;
+	opacity: 0;
+	position: absolute;
+	margin: 3px 0px 0px 3px;
+	z-index: -100;
+}
+
+.city_informer-fake-radio-container:first-child,
+.city_informer-fake-checkbox-container:first-child {
+	margin: 3px 8px 0px 29px;
+}
+
+.city_informer-fake-radio-container,
+.city_informer-fake-checkbox-container {
+	float: left;
+	margin: 3px 8px 0px 29px;
+}
+
+.city_informer-fake-radio,
+.city_informer-fake-checkbox {
+	cursor: pointer;
+	display: block;
+	height: 18px;
+	width: 18px;
+    margin: 0 0;
+}
+
+.city_informer-fake-radio,
+.city_informer-fake-radio.disabled,
+.city_informer-fake-radio.disabled:hover {
+	background: url(images/sprite.png) 0px -18px no-repeat;
+}
+
+.city_informer-fake-checkbox,
+.city_informer-fake-checkbox.disabled,
+.city_informer-fake-checkbox.disabled:hover {
+	background: url(images/sprite.png) 0 0 no-repeat;
+}
+
+.city_informer-fake-radio.selected,
+.city_informer-fake-radio:hover {
+	background: url(images/sprite.png) -36px -18px no-repeat;
+}
+
+.city_informer-fake-checkbox.selected,
+.city_informer-fake-checkbox:hover {
+	background: url(images/sprite.png) -36px 0 no-repeat;
+}
+
+.city_informer-fake-radio.disabled,
+.city_informer-fake-checkbox.disabled,
+.city_informer-fake-radio:hover,
+.city_informer-fake-checkbox:hover {
+	opacity: 0.5;
+}
+
+.city_informer-fake-radio.selected:hover,
+.city_informer-fake-checkbox.selected:hover {
+	opacity: 1;
+}
+
+.city_informer-radio-item-container:first-child,
+.city_informer-checkbox-item-container:first-child {
+	margin-top: 0px;
+}
+
+.city_informer-radio-item-container,
+.city_informer-checkbox-item-container {
+	display: -moz-inline-stack; /* inline-block for Mozilla 2 */
+	display: inline-block; /* inline-block for other browsers */
+	margin-top: 7px;
+}
+
+
+/* clear and submit buttons styles */
+#content input[type="submit"],
+#content input[type="reset"] {
+	background-color: #656565;
+	border: 0;
+	border-radius: 3px;
+		-moz-border-radius: 3px; /* Firefox */
+  		-webkit-border-radius: 3px; /* Safari, Chrome */
+	color: #fff;
+	font-size: 15px;
+	padding: 16px 17px 15px 20px;
+	margin-right: 8px;
+	margin-top: 4px;
+	text-transform: uppercase;
+	box-shadow: 0 3px #333333;
+	-webkit-box-shadow: #333333 0px 3px 0px;
+	-moz-box-shadow: #333333 0px 3px 0px;
+    font-family: Share, Helvetica, sans-serif;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+#content input[type="submit"] {
+    padding: 16px 20px 15px 20px;
+}
+
+#content input[type="reset"]:hover {
+	background-color: #cd6a39;
+    box-shadow: 0 3px #924a27;
+    -webkit-box-shadow: #924a27 0px 3px 0px;
+    -moz-box-shadow: #924a27 0px 3px 0px;
+}
+
+#content input[type="submit"]:hover {
+	background-color: #cd6a39;
+    box-shadow: 0 4px #924a27;
+    -webkit-box-shadow: #924a27 0px 3px 0px;
+    -moz-box-shadow: #924a27 0px 3px 0px;
+}
+
+/***********************  Custom File Input Styles */
+
+.NFI-wrapper {
+    margin-top: 8px;
+    width: 460px;
+    height: 70px;
+    background: #dedede;
+    border-radius: 3px;
+	    -moz-border-radius: 3px; /* Firefox */
+	  	-webkit-border-radius: 3px; /* Safari, Chrome */
+	  	-o-border-radius: 3px; /* Opera */
+	    -ms-border-radius: 3px; /* IE8 */
+    clear: both;
+}
+
+.NFI-button {
+    width: 211px;
+    height: 49px;
+    margin: 11px 0 0px 9px;
+    background: url('images/file-input.png') 0 0 no-repeat;
+    line-height: 49px;
+    padding-left: 11px
+}
+
+.NFI-filename {
+    width: 180px;
+    height: 49px;
+    padding: 0px;
+}
+
+.NFI-wrapper input[type='text'] {
+	width: 180px !important;
+    line-height: 49px;
+    height: 40px;
+    border: none;
+    background: #dedede;
+    margin: 10px 0 0 3px !important;
+    color: #656565;
+}
+
+/**************************************************/
+/**********************CONTENT********************/
+/************************************************/
+
+#page-wrapper {
+    width:100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/***********************************************/
+/******************* HEADER *******************/
+/*********************************************/
+
+#custom-header img {
+    margin: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+}
+
+#main-header {
+    position: relative;
+}
+
+#city_informer-header-top-wrapper {
+    display: block;
+    background-color: #282828;
+}
+
+#city_informer-header-top {
+    display: block;
+    margin: 0 auto;
+    min-height: 50px;
+    height: 100%;
+    width: 1200px;
+    font-family: "Share", Helvetica, sans-serif;
+}
+
+#main-header h1.city_informer-title {
+    display: block;
+    word-wrap: break-word;
+    line-height: 49px;
+}
+
+#main-header h1.city_informer-title a {
+    width: 100px;
+    word-wrap: break-word;
+    float: left;
+    letter-spacing: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 130px;
+}
+
+#main-header .city_informer-description {
+    width: 300px;
+    word-wrap: break-word;
+    line-height: 49px;
+    float: left;
+    font-family:"Open Sans", Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: italic;
+    color: #aaaaaa;
+    margin-left: 41px;
+    display: block;
+}
+
+#city_informer-header-top hgroup {
+    width: 500px;
+    display: block;
+}
+
+/*Header top main navigation menu*/
+
+#city_informer-header-top #city_informer-navigation {
+    display: block;
+    min-height: 100%;
+    width: 500px;
+    float: right;
+}
+
+#city_informer-navigation ul{
+    line-height: 49px;
+    font-weight: bold;
+    list-style-type: none;
+    text-decoration: none;
+    float:right;
+    margin: 0 116px 0 0;
+    display: block;
+}
+
+#city_informer-navigation ul li {
+    float:left;
+    position: relative;
+}
+
+#city_informer-navigation ul li a {
+    font-size: 15px;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    display: block;
+    padding: 0 14px;
+}
+
+#city_informer-navigation ul li:hover {
+    background-image: none;
+}
+
+#city_informer-navigation nav ul > li.menu-item-has-children:hover {
+    background: url(images/navigation-arrow.jpg) no-repeat bottom;
+}
+
+#city_informer-navigation nav ul > li.page_item_has_children:hover {
+    background: url(images/navigation-arrow.jpg) no-repeat bottom;
+}
+
+/* submenu */
+
+#city_informer-navigation nav ul > li.menu-item-has-children li {
+    background-image: none !important;
+}
+
+#city_informer-navigation nav ul > li.page_item_has_children li {
+    background-image: none !important;
+}
+
+#city_informer-navigation ul li ul {
+    position: absolute;
+    display: none;
+    width: 220px;
+    padding: 0;
+    margin: 0;
+    border-radius: 3px;
+        -moz-border-radius: 3px; /* Firefox */
+        -webkit-border-radius: 3px; /* Safari, Chrome */
+    border: 1px solid #d9d9d9;
+    border-top: none;
+    background: #fff !important;
+    right: 0px;
+    z-index: 11;
+    color:#fff;
+}
+
+#city_informer-navigation > ul > ul > li{
+    display: block;
+    position: relative;
+    width: 220px;
+    clear: both;
+    margin-top: 12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+#city_informer-navigation  ul  ul  ul {
+    border-top: 1px solid #d9d9d9;
+}
+
+#city_informer-navigation  ul  ul  li:first-child {
+    margin-top: 7px;
+}
+
+#city_informer-navigation ul li:hover > ul {
+    display: block;
+    padding-bottom: 11px;
+}
+
+#city_informer-navigation ul li ul li:hover,
+#city_informer-navigation ul li ul li:focus {
+    background-image: none;
+}
+
+#city_informer-navigation ul li ul li:hover{
+    width: 100%;
+    background: #282828;
+}
+
+#city_informer-navigation ul ul li a {
+    color: #576167;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 36px;
+    padding-left: 18px;
+}
+
+#city_informer-navigation ul ul li a:hover {
+    color: #fff;
+    position: relative;
+    background-image: none;
+    background-color: #282828;
+}
+
+#city_informer-navigation  ul  ul  li {
+    width: 100%;
+}
+
+#city_informer-navigation  div > ul > li > ul > li > ul {
+    right: 100%;
+    top: 0px;  
+}
+
+#city_informer-navigation  div > ul > li > ul > li > ul > li > ul{
+    right: 100%;
+    top: 0px;  
+}
+
+#city_informer-navigation  div > ul > li > ul > li > ul > li > ul > li > ul{
+    left: 100%;
+    top: 0px;  
+}
+
+#city_informer-navigation  div > ul > li > ul > li > ul > li > ul > li > ul > li > ul{
+    left: 100%;
+    top: 0px;  
+}
+
+#city_informer-navigation  div > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul{
+    right: 100%;
+    top: 0px;  
+}
+
+#city_informer-navigation  div > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li >ul{
+    right: 100%;
+    top: 0px;  
+}
+
+#city_informer-navigation  div > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li >ul > li >ul{
+    left: 100%;
+    top: 0px;  
+}
+
+#city_informer-navigation  div > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li >ul > li > ul > li > ul{
+    left: 100%;
+    top: 0px;  
+}
+
+#city_informer-navigation  div > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li >ul > li > ul > li > ul{
+    right: 100%;
+    top: 0px;  
+}
+
+#city_informer-navigation  div > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li >ul > li > ul > li > ul > li > ul{
+    right: 100%;
+    top: 0px;  
+}
+
+/**************************************HEADER BOTTOM*/
+
+#city_informer-header-bottom-wrapper {
+    background-color: #fff;
+}
+
+#city_informer-header-bottom {
+    width: 1200px;
+    margin: 0 auto;
+    height: 98px;
+    z-index: 10;
+}
+
+#city_informer-header-bottom h2.city_informer-welcome {
+    line-height: 1;
+    font-size: 24px;
+    float: left;
+    display: block;
+    margin-left: 131px;
+    padding-top: 24px;
+    font-family: Share, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+/**************************************BREADCRUMBS*/
+
+.breadcrumbs {
+    clear: both;   
+    display: block; 
+    position: absolute;
+    margin: 55px 0 0 131px;
+    width: 300px;
+}
+
+.breadcrumbs a, .breadcrumbs .current {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: italic;   
+}
+
+.breadcrumbs .current { 
+    font-weight: bold;    
+}
+
+/* search form*/
+
+.city_informer-search-header {
+    display: block;
+    margin: 0;
+    position: relative;
+    float: right;
+    margin: 0 129px 0 0;
+    padding-top: 23px;
+    width: 301px;
+    height: 50px;
+}
+
+.city_informer-search-text {
+    float: left;
+    display: block;
+    line-height: 50px;
+    width: 217px;
+    height: 48px !important;
+    background: #f8f8f8;
+    border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+    border: 1px solid #d9d9d9;
+    outline: none;
+    padding-left: 19px;
+    margin-right: 9px;
+}
+
+.city_informer-search-go {
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+    margin-left: 0px;
+    line-height: 50px;
+    border: none;
+    background: url(images/search-button.jpg) no-repeat;
+    width: 55px;
+    height: 49px;
+    cursor: pointer;
+    box-shadow: none !important;
+}
+
+.city_informer-search-form {
+    width: 332px;
+}
+
+
+.search #content {
+    padding-bottom: 100px;
+}
+
+/************************ End of HEADER *********************/
+
+/*************************************************************/
+/*********************************SLIDER*********************/
+/***********************************************************/
+
+.container-slider {
+    clear: both;
+    width: 100%;
+}
+
+#slides {
+    display: block;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 0;
+}
+
+.slidesjs-container {
+    height: 422px;
+}
+
+.slider-text {
+    display: block;
+    position: absolute;
+    width: 940px;
+    height: 422px;
+    top:0;
+    left: 50%;
+    margin-left: -470px !important;
+    z-index: 10;
+}
+
+.slidesjs-navigation {
+    width: 940px;
+    display: block;
+    position: relative;    
+    left: 50%;
+    z-index: 10;
+    top:199px;
+}
+
+.slidesjs-previous{
+    width: 26px;
+    height: 48px;
+    display: block;
+    background: url(images/slider-arrow.png) 0 0 no-repeat;
+    position: absolute;
+    margin: auto 0;
+    margin-top: -24px;
+    cursor: pointer;
+    z-index: 10;
+    margin-left: -470px;
+}
+
+.slidesjs-next {
+    width: 26px;
+    height: 48px;
+    display: block;
+    background: url(images/slider-arrow.png) -26px 0 no-repeat;
+    position: absolute;
+    margin-top: -24px;
+    right: 0;
+    cursor: pointer;
+    z-index: 10;
+    margin-left: 444px;
+}
+
+.attachment-slider-image {
+    height: 422px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+}
+
+.slidesjs-slide {
+    height: 422px;
+}
+
+.slider-head h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    margin-top: 81px;
+    padding-left: 11px;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.slider-content {
+    width: 620px;
+    left: 50%;
+    margin-left: -312px !important;
+    position: absolute;
+    margin-top: 12px; 
+}
+
+.slider-content p {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 42px;
+    text-align: center;
+    padding-top: 0;
+    padding: 0 91px;
+    line-height: 24px;
+}
+
+a.slider-more {
+    background: #cd6a39;
+    border: 0;
+    border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+    box-shadow: 0 4px #924a27;
+        -webkit-box-shadow: #924a27 0px 4px 0px;
+        -moz-box-shadow: #924a27 0px 4px 0px;
+    text-transform: uppercase;
+    position: absolute;
+    text-align: center;
+    height: 40px;
+    width: 140px;
+    left: 50%;
+    margin-left: -70px;  
+    top:245px;
+    font-size: 15px;
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    line-height: 40px;
+    font-family: "Share", Helvetica, sans-serif;
+}
+
+.slide-wrapper {
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+    background-color: #000;
+    opacity: 0.3;    
+    width: 620px;
+    height: 422px;
+    position: absolute;
+    left: 50%;
+    margin-left: -310px;
+    top: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+/************************************************/
+/********************* CONTAINER ***************/
+/**********************************************/
+
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+img.alignleft,
+div.alignleft {
+    padding: 10px 10px 10px 0;
+}
+
+img.alignright,
+div.alignright {
+    padding: 10px 0 10px 10px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto;
+}
+
+/*CONTENT*/
+
+#container {
+	width: 1200px;
+	margin: 0px auto;
+	padding-top: 59px;
+    height: 100%
+}
+
+#content {
+	width: 620px;
+	margin: 0px 0px 142px 129px;
+	float: left;
+	background-color: #fff;
+	border: solid 1px #c2c2c2;
+}
+
+article, 
+.sticky {
+	padding: 0 31px 22px 30px;
+	background: url(images/sidebar-line.jpg) repeat-x bottom;
+    margin-bottom: 36px;
+}
+
+.sticky .entry-header h1 a {
+    text-transform: uppercase;
+    width: 100%;
+    display: inline-block;
+    background-color: #eee;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    border: solid 1px #c2c2c2;
+    color: #cd6a39;
+}
+
+article:last-of-type {
+	background-image:none;
+    padding-bottom: 6px;
+    margin-bottom: 0px;
+}
+
+.entry h2+p {
+    padding-top: 2px;
+}
+
+.entry-header {
+	font-size: 21px;
+}
+
+.entry-header h1,
+h1.page-title {
+    margin-top: 28px;
+    line-height: 1;
+	font-size: 21px;
+	font-weight: normal;
+	color: #444444;
+	text-transform: capitalize;
+    padding-bottom: 0px;
+    word-wrap:break-word;
+}
+
+h1.entry-title {
+    margin-left: 30px;
+    text-align: center;
+}
+
+.search-result h1.page-title {
+    text-align: center;
+}
+
+.entry-header h1 a{
+	font-size: 21px;
+	font-weight: normal;
+	color: #444444;
+	text-transform: capitalize;
+}
+
+.entry-header h1 a:hover{
+	font-size: 21px;
+}
+
+.entry-header .category {
+    margin-top: 11px;
+	font-size: 13px;
+	color: #aaaaaa;
+    word-spacing: 1px;
+}
+
+.entry-header .category a {
+	font-size: 13px;
+	color: #cd6a39;	
+}
+
+.entry h1,
+.comments h1 {
+    padding-top: 18px;
+    padding-bottom: 1px;
+}
+
+.entry h2,
+.comments h2 {
+    padding-top: 19px;
+    padding-bottom: 8px;
+}  /*pixel perfect, don't change*/
+
+.entry h3,
+.comments h3 {
+    padding-top: 14px;
+    padding-bottom: 5px;
+}
+
+.entry h4,
+.comments h4 {
+    padding-top: 18px;
+    padding-bottom: 5px;
+}
+
+.entry h5,
+.comments h5 {
+    padding-top: 18px;
+    padding-bottom: 5px;
+}
+
+.entry h6,
+.comments h6 {
+    padding-top: 21px;
+    padding-bottom: 23px;
+}
+.entry img {
+    margin-top: 15px;
+	max-width: 560px;
+}
+
+.entry .thumbnail-caption-text {
+    padding: 0;
+    padding-top: 5px;
+    font-style: italic;
+    padding-bottom: 6px;
+}
+
+.img_description {
+	margin: 15px 0 31px 0;
+	color: #c2c2c2;
+	font-style: italic;
+}
+
+.entry p {
+    padding-top: 11px;
+    padding-bottom: 10px;
+}
+
+.post-tags {
+	margin-top: 28px;
+}
+
+.post-tags a{
+	font-size: 13px;
+	color: #cd6a39;	 
+    padding-left: 1px;
+}
+
+.scroll-up {
+    padding-top: 9px;
+    padding-bottom: 42px;  
+}
+
+.scroll-up a {
+	font-size: 13px;
+	color: #cd6a39;	
+}
+
+label {
+    line-height: 36px;
+}
+
+.entry .wp-caption {
+    margin: 0;
+}
+
+.entry .wp-caption-text {
+    padding: 0;
+    padding-top: 5px;
+    font-style: italic;
+    padding-bottom: 6px;    
+}
+
+.city_informer-nav-link {
+    display: block;
+    padding: 0 20px 0 20px;
+    margin: 0 20px 0 20px;
+}
+
+.city_informer-nav-link a {
+    color: #cd6a39;
+}
+
+#post-nav a {
+    margin: 30px;
+    color: #cd6a39;
+}
+/*********** 404 ********/
+.error404 #content {
+    padding-bottom: 100px;
+}
+
+.error404 .page-header {
+    text-align: center;
+}
+
+.error404 h2 {
+    /*margin: 20px 0 20px 0;*/
+}
+
+/********************************galery***********/
+
+.gallery .gallery-caption {
+    word-wrap: break-word;
+    position: absolute;
+    overflow: hidden;
+    max-height: 40%;
+    bottom: 15px;
+    left: 0px;
+    background: #333;
+    display: none;
+    width: 100%;
+    color: #fff;
+}
+
+.gallery-item:hover .gallery-caption {
+    display: block;
+}
+
+dl.gallery-item {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.gallery-item img {
+    max-width: 90%;
+    height: auto;
+    margin: 5%;
+   border: none !important;
+}
+
+embed,
+iframe,
+object,
+video {
+    width: 100%;
+}
+
+/****************************** end galery ***********/
+
+/* BWS gallery styles */
+
+.home_page_title {
+    margin-top: 28px;
+    line-height: 1;
+    font-size: 21px;
+    font-weight: normal;
+    color: #444444;
+    text-transform: capitalize;
+    padding-bottom: 0px;
+    word-wrap:break-word;
+    padding-left: 30px;
+}
+
+.gallery_detail_box {
+    font-size: 13px;
+    padding-top: 10px;
+    width: 350px;
+}
+
+.gallery_box ul {
+    margin-left: 20px !important; 
+}
+
+#content .gllr_image_row {
+    overflow: hidden;
+}
+
+#content .gllr_single_image_text {
+    margin: 4px 0 0;
+    font-style: italic;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.gallery_box_single {
+    margin: 0 30px 0 30px;
+}
+
+.gallery_box_single p {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/* BWS Plugin Portfolio styles */
+
+.page-template-portfolio-php .home_page_title,
+.single-portfolio .home_page_title {
+    display: block;
+    border-bottom: none !important;
+    position: relative;
+    line-height: 1;
+    font-size: 21px !important;
+    font-weight: normal;
+    color: #444444;
+    padding-bottom: 0px;
+    word-wrap: break-word;
+    font-family: "Share", Helvetica, sans-serif;
+}
+
+.portfolio_thumb {
+    display: block;
+}
+
+.portfolio_content img{
+    margin: 30px;
+}
+
+.portfolio_content img {
+    max-width: 98%;
+    height: 100%;
+    width: 90%;
+}
+
+/************************************************/
+/****************** SIDEBAR ********************/
+/**********************************************/
+
+#city_informer-sidebar {
+	float: left;
+	width: 300px;
+	margin-left: 19px;
+}
+
+#city_informer-sidebar .widget {
+    padding-bottom: 27px;
+    margin-bottom: 33px;
+}
+
+aside {
+	background: url(images/sidebar-line.jpg) repeat-x bottom;
+}
+
+aside:last-child {
+	background: none;
+}
+
+h1.widget-title {
+    line-height: 1;
+	font-size: 16px;
+	font-weight: bold;
+	color: #888888;
+	text-transform:uppercase;
+	padding-bottom: 17px;
+}
+
+aside ul {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0px !important;
+	list-style-type: none;
+	line-height: 26px;
+}
+
+aside ul li {
+	font-size: 13px;
+}
+
+aside ul li a {
+	font-size: 13px;
+}
+
+aside ul li a:hover{
+	color: #cd6a39;
+	font-size: 13px;
+}
+
+#wp-calendar {
+    margin-left: 20px;
+    width: 260px;
+}
+
+#wp-calendar caption {
+	background: #282828;
+	color: #fff;
+	margin: 0;
+	padding: 10px 0px 10px;
+}
+
+#city_informer-sidebar table {
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+#wp-calendar th,
+#wp-calendar td {
+	padding: 7px 5px;
+	text-align: center;
+	border: 1px solid #282828;
+}
+
+#wp-calendar tfoot {
+	background: #282828;
+	border:none;
+}
+
+#city_informer-sidebar .city_informer-search-form {
+	height: 50px;
+}
+
+#city_informer-sidebar .city_informer-search-text {
+	width:165px;
+}
+
+#city_informer-sidebar .city_informer-search-go {
+	float: left;
+	margin-left: 9px;
+}
+
+aside img {
+	max-width: 260px;
+	max-height: 100%;
+	height: auto;
+    margin: 0;
+    padding-top: 5px;
+}
+
+aside form select {
+	max-width: 100%;
+	overflow: hidden;
+}
+
+aside form select option {
+	max-width: 250px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+aside .city_informer-search-form {
+    margin-left: 20px;
+    width: 260px;
+}
+
+aside .textwidget {
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+aside .tagcloud {
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+aside > .selectBox {
+    margin-left: 20px;
+}
+
+.tagcloud a:hover{
+	color: #cd6a39;
+}
+
+/***********/
+/* Coments*/
+/*********/
+
+.comments {
+	padding: 33px 31px 60px 31px;
+	margin-bottom: 129px;
+	font-size: 13px;
+	color: #555;
+}
+
+.comment-list {
+	list-style-type: none;
+}
+
+.comment-list {
+	margin-left: 0px !important;
+}
+
+#post-nav,
+#comments-nav,
+#image-navigation {
+    display: block;
+    width: 100%;
+    height: 30px; 
+}
+
+#comments-nav a,
+#image-navigation a {
+    color: #cd6a39;
+    margin: 10px;
+}
+
+#prev-comments,
+.city_informer-previous-image {
+    float: left;
+}
+
+#next-comments,
+.city_informer-next-image {
+    float: right;
+}
+
+img.avatar {
+    margin-right: 15px;
+    float: left;
+}
+
+.comment .children {
+    list-style-type: none;
+}
+
+.comment-author {
+	padding-top: 5px;
+	padding-left: 5px;
+	color:#fff;
+	background: #282828;
+    height: 40px;
+}
+
+.comment-body p {
+	padding-left: 30px;
+}
+
+.comment-reply-title {
+	line-height: 50px;
+}
+
+.comment-form {
+	line-height: 2;
+}
+
+.comment-form-comment label{
+	display: block;
+}
+
+.comments blockquote {
+    margin-bottom: 30px;
+}
+
+.comments pre {
+    width: 90%;
+}
+
+.form-allowed-tags {
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 10pt;
+}
+
+.bypostauthor {
+
+}
+
+/********/
+/*FOOTER*/
+/********/
+
+#footer-wrapper {
+	background-color: #fff;
+	clear: both;
+	height: 95px;
+	border-top: 1px solid #c2c2c2;
+}
+
+footer {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.city_informer-info {
+	line-height: 98px;
+	font-size: 13px;
+	float: left;
+	margin-left: 130px;
+}
+
+.city_informer-info a {
+	color: #cd6a39;
+	font-size: 13px;
+}
+
+.city_informer-copyright {
+	line-height: 98px;
+	float: right;
+	margin-right: 131px;
+}
