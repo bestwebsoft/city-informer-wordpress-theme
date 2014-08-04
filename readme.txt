@@ -4,8 +4,8 @@ Author URI: https://github.com/bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: white, gray, black, light, fixed-layout, two-columns, right-sidebar, threaded-comments, sticky-post, custom-header, translation-ready, featured-images
 Requires at least: 3.7 
-Tested up to: 3.9
-Stable tag: 1.2
+Tested up to: 3.9.1
+Stable tag: 1.3
 License: GNU General Public License V3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 City Informer WordPress Theme, Copyright 2014 BestWebSoft.com
@@ -13,7 +13,7 @@ City Informer is distributed under the terms of the GNU GPL
 
 == Description ==
 
-City Informer Wordpress theme is a simple solution to customize your website.
+Create an extraordinary website with City Informer - a feature-rich, flexible and multipurpose theme that can be customized in several clicks. This theme can be compared to playdough - with a little creativity, you can make it appropriate for any type of website, be it Automotive services, Marketing news, Clothing industry or anything else. At the same time, City Informer is simple and discreet, so that readers will be able to focus on your site's content - and enjoy the original design at the same time. Furthermore, this theme is fully compatible with BestWebSoft plugins. Ergo, it is best that you use Captcha (http://wordpress.org/plugins/captcha/) and Facebook Like Button (http://wordpress.org/plugins/facebook-button-plugin/) - which will contribute largely to your site's functionality. Take a closer look at the demo version of City Informer at http://bestwebsoft.com/wordpress_demo_theme/cityinformer/
 
 = Features =
 
@@ -129,6 +129,10 @@ Yes, this theme includes widgets. The following widgets are shown by default: se
 
 == Changelog == 
 
+= V1.3 - 30.07.2014 =
+* Update: We update style.css file.
+* Update: We update functionality for Wordpress 3.9.1. 
+
 = V1.2 - 04.06.2014 =
 * Bugfix: Edit overflows for page elements.
 
@@ -141,6 +145,9 @@ Yes, this theme includes widgets. The following widgets are shown by default: se
 * NEW: Release date of City Informer.
 
 == Upgrade Notice == 
+
+= V1.3 =
+We update functionality for Wordpress 3.9.1. We update style.css file.
 
 = V1.2 =
 Edit overflows for page elements.

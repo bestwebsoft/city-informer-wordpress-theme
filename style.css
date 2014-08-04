@@ -3,8 +3,8 @@ Theme Name: City Informer
 Theme URI: http://bestwebsoft.com/theme/city-informer/
 Author: the BestWebSoft team
 Author URI: https://github.com/bestwebsoft
-Description: WordPress theme for blogs and websites.
-Version: 1.2
+Description: Create an extraordinary website with City Informer - a feature-rich, flexible and multipurpose theme that can be customized in several clicks. This theme can be compared to playdough - with a little creativity, you can make it appropriate for any type of website, be it Automotive services, Marketing news, Clothing industry or anything else. At the same time, City Informer is simple and discreet, so that readers will be able to focus on your site's content - and enjoy the original design at the same time. Furthermore, this theme is fully compatible with BestWebSoft plugins. Ergo, it is best that you use Captcha (http://wordpress.org/plugins/captcha/) and Facebook Like Button (http://wordpress.org/plugins/facebook-button-plugin/) - which will contribute largely to your site's functionality. Take a closer look at the demo version of City Informer at http://bestwebsoft.com/wordpress_demo_theme/cityinformer/
+Version: 1.3
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: left-sidebar, custom-menu, featured-images, sticky-post, threaded-comments
@@ -398,6 +398,7 @@ blockquote {
 
 /*************************************************input TEXT*/
 #content input[type="text"],
+#content input[type="email"],
 #content input[type="password"] {
 	display: block;
 	width: 200px;
@@ -691,6 +692,7 @@ input[type="checkbox"] {
 
 /* clear and submit buttons styles */
 #content input[type="submit"],
+#content input[type="button"],
 #content input[type="reset"] {
 	background-color: #656565;
 	border: 0;
@@ -715,7 +717,8 @@ input[type="checkbox"] {
     padding: 16px 20px 15px 20px;
 }
 
-#content input[type="reset"]:hover {
+#content input[type="reset"]:hover,
+#content input[type="button"]:hover {
 	background-color: #cd6a39;
     box-shadow: 0 3px #924a27;
     -webkit-box-shadow: #924a27 0px 3px 0px;

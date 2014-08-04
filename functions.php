@@ -325,4 +325,3 @@ add_action( 'city_informer_post_caption', 'city_informer_the_post_caption' );
 add_action( 'city_informer_page_nav', 'city_informer_page_nav' );
 
 add_action( 'wp_print_scripts', 'city_informer_ie', 8 );
-?>
