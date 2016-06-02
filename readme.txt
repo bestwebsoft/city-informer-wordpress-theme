@@ -1,19 +1,18 @@
  === City Informer ===
-Contributors: the BestWebSoft team
-Author URI: https://github.com/bestwebsoft
-Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
-Tags: white, gray, black, light, fixed-layout, two-columns, right-sidebar, threaded-comments, sticky-post, custom-header, translation-ready, featured-images
+Contributors: BestWebLayout, BestWebSoft
+Author URI: http://bestweblayout.com/
+Tags: two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, sticky-post, threaded-comments, translation-ready
 Requires at least: 3.7 
-Tested up to: 3.9.1
-Stable tag: 1.3
+Tested up to: 4.5.2
+Stable tag: 1.6
 License: GNU General Public License V3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-City Informer WordPress Theme, Copyright 2014 BestWebSoft.com
+City Informer WordPress Theme, Copyright 2016 BestWebLayout.com
 City Informer is distributed under the terms of the GNU GPL
 
 == Description ==
 
-Create an extraordinary website with City Informer - a feature-rich, flexible and multipurpose theme that can be customized in several clicks. This theme can be compared to playdough - with a little creativity, you can make it appropriate for any type of website, be it Automotive services, Marketing news, Clothing industry or anything else. At the same time, City Informer is simple and discreet, so that readers will be able to focus on your site's content - and enjoy the original design at the same time. Furthermore, this theme is fully compatible with BestWebSoft plugins. Ergo, it is best that you use Captcha (http://wordpress.org/plugins/captcha/) and Facebook Like Button (http://wordpress.org/plugins/facebook-button-plugin/) - which will contribute largely to your site's functionality. Take a closer look at the demo version of City Informer at http://bestwebsoft.com/wordpress_demo_theme/cityinformer/
+Create an extraordinary website with City Informer - a feature-rich, flexible and multipurpose theme that can be customized in several clicks. This theme can be compared to playdough - with a little creativity, you can make it appropriate for any type of website, be it Automotive services, Marketing news, Clothing industry or anything else. At the same time, City Informer is simple and discreet, so that readers will be able to focus on your site's content - and enjoy the original design at the same time. Furthermore, this theme is fully compatible with BestWebSoft plugins. Ergo, it is best that you use Captcha (http://wordpress.org/plugins/captcha/) and Facebook Like Button (http://wordpress.org/plugins/facebook-button-plugin/) - which will contribute largely to your site's functionality. Take a closer look at the demo version of City Informer at http://wp-demo-theme.bestweblayout.com/cityinformer/
 
 = Features =
 
@@ -31,7 +30,7 @@ Create an extraordinary website with City Informer - a feature-rich, flexible an
 
 * Russian (ru_RU)
 
-If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://support.bestwebsoft.com" target="_blank">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program designed for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
+If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://support.bestweblayout.com" target="_blank">BestWebLayout</a> and we'll add it to the plugin. You can download the latest version of the program designed for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
 
 = Copyrights for Resources used in this theme = 
 
@@ -117,7 +116,11 @@ The Custom header block has a height equal to 100px and is displayed on top of t
 
 = How can I change the language from English into Russian? =
 
-Find the file wp-config.php in the main catalog of your WordPress site, open it and change define( ‘WPLANG’, '' ); for define( ‘WPLANG’, ‘ru_RU’ );
+WordPress v4.0 and above:
+Change the language in the admin settings screen. Settings > General > Site Language.
+
+WordPress v3.9.2 and below:
+In the main catalog of your WordPress site, please find wp-config.php file, open it and change define( 'WPLANG', '' ); for define( 'WPLANG', 'ru_RU' );
 
 = Does the theme support widgets? =
 
@@ -127,7 +130,23 @@ Yes, this theme includes widgets. The following widgets are shown by default: se
 
 1. Theme home page.
 
-== Changelog == 
+== Changelog ==
+
+= V1.6 - 02.06.2016 =
+* Bugfix: Fixed mismatch coding standards.
+* Bugfix: Fixed theme styles.
+* Bugfix: Fixed custom header image display.
+* Update: Screenshot was updated to size 1200x900.
+* Update: The theme has been tested for the compatibility with WordPress v.4.5.2.
+* Update: Theme was transferred to new WordPress account.
+
+= V1.5 - 17.03.2015 =
+* Update: BWS Themes menu was removed.
+
+= V1.4 - 03.03.2015 =
+* Update: The following files were updated: style.css, header.php, functions.php.
+* Update: We updated the theme to WordPress 4.1.1.
+* Bugfix: Navigation menu display was fixed.
 
 = V1.3 - 30.07.2014 =
 * Update: We update style.css file.
@@ -144,7 +163,16 @@ Yes, this theme includes widgets. The following widgets are shown by default: se
 = V1.0 - 21.04.2014 =
 * NEW: Release date of City Informer.
 
-== Upgrade Notice == 
+== Upgrade Notice ==
+
+= V1.6 =
+Fixed mismatch coding standards. Fixed theme styles. Fixed custom header image display. Screenshot was updated to size 1200x900. The theme has been tested for the compatibility with WordPress v.4.5.2. Theme was transferred to new WordPress account.
+
+= V1.5 =
+BWS Themes menu was removed.
+
+= V1.4 =
+We updated the theme to WordPress 4.1.1. Navigation menu display was fixed. The following files were updated: style.css, header.php, functions.php.
 
 = V1.3 =
 We update functionality for Wordpress 3.9.1. We update style.css file.

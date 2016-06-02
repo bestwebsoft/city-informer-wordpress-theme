@@ -1,9 +1,9 @@
-<?php 
+<?php
 /**
  * The sidebar containing the secondary widget area
  *
  * @subpackage City Informer
- * @since City Informer 1.2
+ * @since      City Informer 1.2
  */
 ?>
 <div id="city_informer-sidebar" role="complementary">
@@ -19,6 +19,6 @@
 		</aside>
 		<aside class="widget">
 			<?php the_widget( 'WP_Widget_Categories' ); ?>
-		</aside>		
-	<?php }; ?>	
-</div> <!-- #sidebar -->
+		</aside>
+	<?php }; ?>
+</div><!-- #sidebar -->

@@ -4,7 +4,7 @@ This file contains specific styles for IE lt 9
 
 #header_top {
 	height: 50px;
-	height:expression(document.body.clientHeight<51?"50px":"auto");
+	height: expression(document.body.clientHeight<51?"50px":"auto");
 }
 
 #header_top_wrapper {
@@ -21,12 +21,7 @@ This file contains specific styles for IE lt 9
 
 #custom-header {
 	height: 1px;
-	height:expression(document.body.clientHeight<1?"1px":"auto");
-}
-
-#header_top hgroup {
-    height: 0;
-    width: 100%;
+	height: expression(document.body.clientHeight<1?"1px":"auto");
 }
 
 #main-header h1.site-title {
@@ -34,7 +29,7 @@ This file contains specific styles for IE lt 9
 }
 
 #main-header h1.site-title {
-    width: expression(document.body.clientHeight<301?"300px":"auto");
+	width: expression(document.body.clientHeight<301?"300px":"auto");
 }
 
 #nav ul li {
@@ -47,22 +42,22 @@ This file contains specific styles for IE lt 9
 }
 
 .breadcrumbs {
+	position: relative;
 	display: block;
 	float: left;
-	margin-left: 0px;
+	margin-top: 0;
+	margin-left: 0;
 	padding-left: 131px;
-	margin-top: 0px;
-	position: relative;
 }
 
-.attachment-slider-image  {
-	height: 430px;
+.attachment-slider-image {
 	padding: 0;
+	height: 430px;
 }
 
 aside .search-form {
-	width: 285px;
 	margin-left: 10px;
+	width: 285px;
 }
 
 #footer-wrapper {
@@ -70,13 +65,21 @@ aside .search-form {
 }
 
 #custom-header img {
+	position: absolute;
 	left: 0;
-    margin: 0px;
-    margin-bottom: 0px;
-    position: absolute;
+	margin: 0;
 }
 
 #custom-header .site-title,
 #custom-header .site-description {
-    position: relative;
+	position: relative;
+}
+
+blockquote,
+#nav ul li:hover ul,
+.search_text,
+#content input[type="text"],
+#content input[type="password"],
+#content textarea {
+	behavior: url('<?php echo get_template_directory_uri();?>/js/PIE.htc');
 }

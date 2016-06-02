@@ -2,58 +2,29 @@ msgid ""
 msgstr ""
 "Project-Id-Version: city_informer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-13 09:48+0300\n"
+"POT-Creation-Date: 2016-06-02 16:02+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: BestWebSoft <info@bestwebsoft.com>\n"
-"Language: \n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Poedit-Language: Russian\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.8.4\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../header.php:54
-msgid "Welcome to our blog!"
-msgstr "Добро пожаловать на наш блог!"
+#: ../404.php:13
+msgid "404 Page Not Found"
+msgstr "404 Страница не найдена"
 
-#: ../search.php:12
-msgid "Search results for:"
-msgstr "Результаты поиска для:"
-
-#: ../content.php:20
-msgid "Posted on"
-msgstr "Опубликовано в"
-
-#: ../content.php:22
-msgid "in"
-msgstr "в"
-
-#: ../content.php:36
-#: ../image.php:71
-msgid "Pages:"
-msgstr "Страницы:"
-
-#: ../content.php:44
-#: ../functions.php:166
-msgid "Tags:"
-msgstr "Теги"
-
-#: ../content.php:49
-msgid "Top"
-msgstr "Наверх"
-
-#: ../footer.php:13
-msgid "Powered by"
-msgstr "Создано"
-
-#: ../footer.php:14
-msgid "and"
-msgstr "и"
+#: ../404.php:16
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Ничего не найдено. Возможно стоит воспользоваться поиском?"
 
 #: ../archive.php:15
 msgid "Daily Archives:"
@@ -71,9 +42,9 @@ msgstr "Архив за:"
 msgid "Archives"
 msgstr "Архивы"
 
-#: ../slider.php:36
-msgid "learn more"
-msgstr "Читать далее"
+#: ../category.php:17
+msgid "Category Archives:"
+msgstr "Архивы категории:"
 
 #: ../comments.php:16
 msgid "No Comments"
@@ -103,34 +74,6 @@ msgstr "Предыдущие комментарии"
 msgid "Next Comments"
 msgstr "Следующий комментарий"
 
-#: ../404.php:13
-msgid "404 Page Not Found"
-msgstr "404 Страница не найдена"
-
-#: ../404.php:16
-msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr "Ничего не найдено. Возможно стоит воспользоваться поиском?"
-
-#: ../image.php:16
-msgid "Link to full-size image"
-msgstr "Исходный размер картинки"
-
-#: ../image.php:19
-msgid "Return to"
-msgstr "Возвратиться на"
-
-#: ../image.php:22
-msgid "Edit"
-msgstr "Редактировать"
-
-#: ../image.php:58
-msgid "Previous"
-msgstr "Предыдущий"
-
-#: ../image.php:59
-msgid "Next"
-msgstr "Следующий"
-
 #: ../content-none.php:11
 msgid "Nothing Found"
 msgstr "Ничего не найдено"
@@ -144,91 +87,162 @@ msgid "Get started here"
 msgstr "Начните здесь"
 
 #: ../content-none.php:17
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "Ничего не найдено по вашему запросу. Попробуйте использовать другие запросы в поиске."
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Ничего не найдено по вашему запросу. Попробуйте использовать другие запросы "
+"в поиске."
 
 #: ../content-none.php:20
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
 msgstr "Ничего не найдено. Возможно вам поможет поиск."
 
-#: ../category.php:17
-msgid "Category Archives:"
-msgstr "Архивы категории:"
+#: ../content.php:20
+msgid "Posted on"
+msgstr "Опубликовано в"
 
-#: ../tag.php:13
-msgid "Tag Archives:"
-msgstr "Теги:"
+#: ../content.php:23
+msgid "in"
+msgstr "в"
 
-#: ../functions.php:61
-msgid "Page"
-msgstr "Страница:"
+#: ../content.php:39 ../image.php:72
+msgid "Pages:"
+msgstr "Страницы:"
 
-#: ../functions.php:68
+#: ../content.php:47 ../functions.php:164
+msgid "Tags:"
+msgstr "Теги"
+
+#: ../content.php:52
+msgid "Top"
+msgstr "Наверх"
+
+#: ../footer.php:13
+msgid "Powered by"
+msgstr "Создано"
+
+#: ../footer.php:15
+msgid "and"
+msgstr "и"
+
+#: ../functions.php:52
 msgid "Main Sidebar"
 msgstr "Сайдбар"
 
-#: ../functions.php:80
+#: ../functions.php:64
 msgid "Add to slider"
 msgstr "добавить в слайдер"
 
-#: ../functions.php:110
+#: ../functions.php:94
 msgid "To add this"
 msgstr "Добавить"
 
-#: ../functions.php:110
+#: ../functions.php:94
 msgid "into the slider, mark it"
 msgstr "в слайдер, отметить"
 
-#: ../functions.php:163
+#: ../functions.php:161
 msgid "Home"
 msgstr "Главная"
 
-#: ../functions.php:164
+#: ../functions.php:162
 msgid "Category:"
 msgstr "Категории:"
 
-#: ../functions.php:165
+#: ../functions.php:163
 msgid "Results for:"
 msgstr "Поиск для:"
 
-#: ../functions.php:167
-msgid "Autors posts:"
-msgstr "Автор записи"
+#: ../functions.php:165
+msgid "Authors posts:"
+msgstr "Записи автора:"
 
-#: ../functions.php:168
+#: ../functions.php:166
 msgid "Error 404"
 msgstr "Ошибка 404"
 
-#: ../functions.php:277
+#: ../functions.php:286
 msgid "Older posts"
 msgstr "Предыдущие записи"
 
-#: ../functions.php:278
+#: ../functions.php:287
 msgid "Newer posts"
 msgstr "Новые записи"
+
+#: ../functions.php:310
+msgid "Page"
+msgstr "Страница:"
+
+#: ../header.php:46
+msgid "Welcome to our blog!"
+msgstr "Добро пожаловать на наш блог!"
+
+#: ../image.php:16
+msgid "Link to full-size image"
+msgstr "Исходный размер картинки"
+
+#: ../image.php:19
+msgid "Return to"
+msgstr "Возвратиться на"
+
+#: ../image.php:22
+msgid "Edit"
+msgstr "Редактировать"
+
+#: ../image.php:59
+msgid "Previous"
+msgstr "Предыдущий"
+
+#: ../image.php:60
+msgid "Next"
+msgstr "Следующий"
+
+#: ../search.php:12
+msgid "Search results for:"
+msgstr "Результаты поиска для:"
 
 #: ../searchform.php:10
 msgid "Enter search keyword"
 msgstr "Введите ключевые слова"
 
+#: ../slider.php:36
+msgid "learn more"
+msgstr "Читать далее"
+
+#: ../tag.php:13
+msgid "Tag Archives:"
+msgstr "Теги:"
+
 #~ msgid "Download high resolution image"
 #~ msgstr "Загрузить картинку высокого разрешения"
+
 #~ msgid "Sorry, nothing found."
 #~ msgstr "Ничего не найдено"
+
 #~ msgid "Image"
 #~ msgstr "Картинка"
+
 #~ msgid "Tags: "
 #~ msgstr "Теги:"
+
 #~ msgid "LEARN MORE"
 #~ msgstr "Читать далее"
+
 #~ msgid "Search Results for: %s"
 #~ msgstr "Результаты поиска для: %s"
+
 #~ msgid "&laquo; Previous Comments"
 #~ msgstr "&laquo; Предыдущие комментарии"
+
 #~ msgid "Next Comments &raquo;"
 #~ msgstr "Следующие комментарии &raquo;"
+
 #~ msgid "% Comments"
 #~ msgstr "% комментариев"
+
 #~ msgid ""
 #~ "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 #~ msgstr ""
@@ -241,20 +255,28 @@ msgstr "Введите ключевые слова"
 #, fuzzy
 #~ msgid "Next &rsaquo;&rsaquo;"
 #~ msgstr "Следующие комментарии &raquo;"
+
 #~ msgid "Daily Archives: %s"
 #~ msgstr "Архив за: %s"
+
 #~ msgid "Monthly Archives: %s"
 #~ msgstr "Архив за: %s"
+
 #~ msgid "Yearly Archives: %s"
 #~ msgstr "Архив за: %s"
+
 #~ msgid "in "
 #~ msgstr "в"
+
 #~ msgid "Read more"
 #~ msgstr "Читать далее"
+
 #~ msgid "View all posts in %s"
 #~ msgstr "Простмотреть все записи в %s"
+
 #~ msgid "sidebar"
 #~ msgstr "Сайдбар"
+
 #~ msgid "If you want to add this post in slider, choose the checkbox &nbsp "
 #~ msgstr ""
 #~ "Если вы хотите добавить эту запись в слайдер, используйте чекбокс &nbsp "
@@ -686,4 +708,3 @@ msgstr "Введите ключевые слова"
 #, fuzzy
 #~ msgid "Yearly Archives: <span>%s</span>"
 #~ msgstr "Архив за: %s"
-
