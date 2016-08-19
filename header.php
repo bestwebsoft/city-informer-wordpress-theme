@@ -43,7 +43,7 @@
 		</div>  <!-- end #custom-header -->
 		<div id="city_informer-header-bottom-wrapper">
 			<div id="city_informer-header-bottom">
-				<h2 class="city_informer-welcome"> <?php _e( 'Welcome to our blog!', 'city-informer' ); ?></h2>
+				<h2 class="city_informer-welcome"><?php _e( 'Welcome to our blog!', 'city-informer' ); ?></h2>
 				<div class="city_informer-search-header">
 					<?php get_search_form(); ?>
 				</div>

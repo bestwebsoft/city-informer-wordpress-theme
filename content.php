@@ -9,21 +9,25 @@ global $wp_query; ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 	<header class="entry-header">
 		<h1>
-			<?php if ( is_single() ) {
+			<?php if ( is_singular() ) {
 				the_title();
-			} else { ?>
-				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-			<?php } ?>
+			} else {
+				the_title( '<a href="' . get_the_permalink() . '">', '</a>' );
+			} ?>
 		</h1>
 		<div class="category">
-			<?php if ( ! is_singular() ) {
-				_e( 'Posted on', 'city-informer' );
-				echo ' '; ?><a href="<?php the_permalink(); ?>"><?php echo get_the_date(); ?></a>
-				<?php if ( has_category() ) {
-					echo __( 'in', 'city-informer' ) . ' ';
+			<?php if ( ! is_page() ) {
+				_e( 'Posted on ', 'city-informer' );
+				if ( is_singular() ) {
+					printf( '<a href="%1$s" title="%2$s">%3$s</a>', esc_url( get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) ), the_title_attribute( 'echo=0' ), get_the_date() );
+				} else {
+					printf( '<a href="%1$s" title="%2$s">%3$s</a>', esc_url( get_the_permalink() ), the_title_attribute( 'echo=0' ), get_the_date() );
+				}
+				if ( has_category() ) {
+					echo ' ' . __( 'in', 'city-informer' ) . ' ';
 					the_category( ', ' );
 				}
-			} ?>
+			}?>
 		</div> <!-- end .category -->
 	</header> <!-- end .entry-header -->
 	<div class="entry">

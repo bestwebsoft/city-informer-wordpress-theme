@@ -122,9 +122,10 @@ function city_informer_scripts_styles() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 	/* Loads selectivizr JavaScript file to add support for newest css pseudoclasses. */
-	wp_enqueue_script( 'trvlplnt-pseudoclasses-script', get_template_directory_uri() . '/js/selectivizr.js', array( 'jquery' ) );
+	wp_enqueue_script( 'city_informer_pseudoclasses_script', get_template_directory_uri() . '/js/selectivizr.js', array( 'jquery' ) );
 	/* Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. */
-	wp_enqueue_script( 'trvlplnt-support-script', get_template_directory_uri() . '/js/html5.js', array( 'jquery' ) );
+	wp_enqueue_script( 'city_informer_support_script', get_template_directory_uri() . '/js/html5.js', array( 'jquery' ) );
+	wp_script_add_data( 'city_informer_support_script', 'conditional', 'lt IE 9' );
 }
 
 // custom header
@@ -288,42 +289,6 @@ function city_informer_page_nav() {
 		</div><!-- .city_informer-nav-link -->
 	<?php };
 }
-
-/* backwards compatibility title-tag */
-if ( ! function_exists( '_wp_render_title_tag' ) ) {
-	/* customize title if WP version < 4.1 */
-	function city_informer_title( $title, $sep ) {
-		global $paged, $page;
-		if ( is_feed() ) {
-			return $title;
-		}
-		/* Add the site name. */
-		$site_title = get_bloginfo( 'name' );
-		/* Add the site description for the home/front page. */
-		$site_description = get_bloginfo( 'description', 'display' );
-		$sep              = '&laquo;';
-		if ( $site_description && ( is_home() || is_front_page() ) ) {
-			$title = "$site_title $sep $site_description";
-		}
-		/* Add a page number if necessary. */
-		if ( 2 <= $paged || 2 <= $page ) {
-			$title = "$title $sep " . sprintf( __( 'Page', 'city-informer' ) . ' %s', max( $paged, $page ) );
-		}
-
-		return $title;
-	}
-
-	/* add wp_title filter if WP version < 4.1 */
-	add_filter( 'wp_title', 'city_informer_title' );
-
-	/* render title in wp_head if WP version < 4.1 */
-	function city_informer_render_title() { ?>
-		<title><?php wp_title( '|', true, 'right' ); ?></title>
-	<?php }
-
-	add_action( 'wp_head', 'city_informer_render_title' );
-}
-/* end backwards compatibility */
 
 /* Add actions */
 add_action( 'after_setup_theme', 'city_informer_setup' );

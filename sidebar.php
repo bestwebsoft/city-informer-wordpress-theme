@@ -7,18 +7,17 @@
  */
 ?>
 <div id="city_informer-sidebar" role="complementary">
-	<?php if ( ! function_exists( 'dynamic_sidebar' ) || ! dynamic_sidebar( 'Main Sidebar' ) ) { ?>
-		<aside class="widget">
-			<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-		</aside>
-		<aside class="widget">
-			<?php the_widget( 'WP_Widget_Recent_Comments' ); ?>
-		</aside>
-		<aside class="widget">
-			<?php the_widget( 'WP_Widget_Archives' ); ?>
-		</aside>
-		<aside class="widget">
-			<?php the_widget( 'WP_Widget_Categories' ); ?>
-		</aside>
-	<?php }; ?>
+	<?php if ( is_active_sidebar( 'sidebar-widgets' ) ) {
+		dynamic_sidebar( 'sidebar-widgets' );
+	} else {
+		$args     = array(
+			'before_widget' => '<aside class="widget %s">',
+			'after_widget'  => '</aside>',
+		);
+		$instance = array();
+		the_widget( 'WP_Widget_Recent_Posts', $instance, $args );
+		the_widget( 'WP_Widget_Recent_Comments', $instance, $args );
+		the_widget( 'WP_Widget_Archives', $instance, $args );
+		the_widget( 'WP_Widget_Categories', $instance, $args );
+	} ?>
 </div><!-- #sidebar -->

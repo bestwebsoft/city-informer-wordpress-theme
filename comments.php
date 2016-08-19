@@ -13,6 +13,7 @@ if ( post_password_required() ) {
 <div class="comments">
 	<?php if ( have_comments() ) { ?>
 		<h2>
+			<?php printf( _n( 'One Comment for &ldquo;%2$s&rdquo;', '%1$s Comments for &ldquo;%2$s&rdquo;', get_comments_number(), 'city-informer' ), number_format_i18n( get_comments_number() ), get_the_title() ); ?>
 			<?php comments_number( __( 'No Comments', 'city-informer' ), __( 'One Comment', 'city-informer' ), '% ' . __( 'Comments', 'city-informer' ) );
 			echo ( ' ' ) . __( 'for', 'city-informer' ) . ( ' ' );
 			the_title(); ?>
@@ -29,6 +30,10 @@ if ( post_password_required() ) {
 				<div id="next-comments"><?php next_comments_link( __( 'Next Comments', 'city-informer' ) . ' &raquo;' ); ?></div>
 			</nav><!-- #comments-nav -->
 		<?php }
-	}
+	} else { ?>
+		<h2>
+			<?php printf( __( 'No Comments for &ldquo;%s&rdquo;', 'city-informer' ), get_the_title() ); ?>
+		</h2>
+	<?php }
 	comment_form(); ?>
 </div>

@@ -11,15 +11,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) { ?>
 				<header class="entry-header">
 					<h1 class="entry-title">
-						<?php if ( is_day() ) {
-							printf( __( 'Daily Archives:', 'city-informer' ) . ' %s', '<span>' . get_the_date() . '</span>' );
-						} elseif ( is_month() ) {
-							printf( __( 'Monthly Archives:', 'city-informer' ) . ' %s', '<span>' . get_the_date( 'F Y' ) . '</span>' );
-						} elseif ( is_year() ) {
-							printf( __( 'Yearly Archives:', 'city-informer' ) . ' %s', '<span>' . get_the_date( 'Y' ) . '</span>' );
-						} else {
-							_e( 'Archives', 'city-informer' );
-						} ?>
+						<?php the_archive_title(); ?>
 					</h1>
 				</header>
 				<?php while ( have_posts() ) : the_post();

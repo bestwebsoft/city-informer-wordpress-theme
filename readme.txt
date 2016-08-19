@@ -1,10 +1,11 @@
  === City Informer ===
 Contributors: BestWebLayout, BestWebSoft
 Author URI: http://bestweblayout.com/
+Donate link: http://bestwebsoft.com/donate/
 Tags: two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, sticky-post, threaded-comments, translation-ready
-Requires at least: 3.7 
-Tested up to: 4.5.2
-Stable tag: 1.6
+Requires at least: 4.2
+Tested up to: 4.6
+Stable tag: 1.7
 License: GNU General Public License V3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 City Informer WordPress Theme, Copyright 2016 BestWebLayout.com
@@ -88,7 +89,7 @@ Installation using "Add New Theme"
 3. Click the 'Install' button to open the theme's repository listing
 4. Click the 'Install' button
 
-Activiation and Use
+Activation and Use
 
 1. Activate the Theme through the 'Themes' menu in WordPress
 
@@ -116,11 +117,7 @@ The Custom header block has a height equal to 100px and is displayed on top of t
 
 = How can I change the language from English into Russian? =
 
-WordPress v4.0 and above:
 Change the language in the admin settings screen. Settings > General > Site Language.
-
-WordPress v3.9.2 and below:
-In the main catalog of your WordPress site, please find wp-config.php file, open it and change define( 'WPLANG', '' ); for define( 'WPLANG', 'ru_RU' );
 
 = Does the theme support widgets? =
 
@@ -131,6 +128,9 @@ Yes, this theme includes widgets. The following widgets are shown by default: se
 1. Theme home page.
 
 == Changelog ==
+
+= V1.7 - 19.08.2016 =
+* Update : All functionality for WordPress 4.6 was updated.
 
 = V1.6 - 02.06.2016 =
 * Bugfix: Fixed mismatch coding standards.
@@ -164,6 +164,9 @@ Yes, this theme includes widgets. The following widgets are shown by default: se
 * NEW: Release date of City Informer.
 
 == Upgrade Notice ==
+
+= V1.7 =
+* The compatibility with new WordPress version updated.
 
 = V1.6 =
 Fixed mismatch coding standards. Fixed theme styles. Fixed custom header image display. Screenshot was updated to size 1200x900. The theme has been tested for the compatibility with WordPress v.4.5.2. Theme was transferred to new WordPress account.
